@@ -1,38 +1,68 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+  
+  .App{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.849);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    background-color: rgba(237, 236, 236, 0.637);
+    width: 420px;
+    transform: scale(0.7); 
+    padding: 60px;
+    border-radius: 30px;
+  }
+.header{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h1{
+  font-family: 'Pacifico', cursive; /* Custom font */
+  
+  color: #e67e22;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, #c1b6b6, #afa1a1);
+  -webkit-background-clip: text;
+  color: transparent;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header p{
+  text-shadow: 2px 2px 3px grey ;
+  font-size: large;
+  color: rgb(0, 0, 0);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.total{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  height: 150px;
+  border-radius: 30px;
+  margin: 20px;
+  box-shadow: 5px 5px 10px rgba(103, 99, 99, 0.3);
+}
+.total h2{
+  color: black;
+  text-shadow: 2px 2px 4px #a19c9c;
+}
+.total p{
+  color: rgb(75, 73, 75);
+  text-shadow: 1px 1px 2px;
+}
+.input{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 25px;
+  justify-content: space-around;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button{
+  display: flex;
+  justify-content: space-around;
 }
